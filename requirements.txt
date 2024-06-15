@@ -1,0 +1,4 @@
+pandas
+selenium
+vaderSentiment
+urllib3<2.0

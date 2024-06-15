@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  python-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./temp:/temp
+    environment:
+      - SINGLE_USER_CREDENTIALS_USERNAME=helder
+      - SINGLE_USER_CREDENTIALS_PASSWORD=123456789012
+    ports:
+      - "8443:8443"
+      - "8079:8079"
+    command: ["python", "seu_script.py"]
