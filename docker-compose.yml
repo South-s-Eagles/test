@@ -13,4 +13,4 @@ services:
     ports:
       - "8443:8443"
       - "8079:8079"
-    command: ["python", "seu_script.py"]
+    command: ["python", "webcrawler.py"]
